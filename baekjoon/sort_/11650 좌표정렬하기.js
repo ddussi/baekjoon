@@ -2,11 +2,11 @@ const fs = require('fs');
 const filePath = process.platform === 'linux' ? '/dev/stdin' : './example.txt';
 const input = fs.readFileSync(filePath).toString().trim().split("\n");
 function solve() {
-let arr = input.slice(1)
-let newarr = arr.map((x)=>x.split(" "))
-newarr.sort((a,b)=> parseInt(a[1]-b[1]))
-newarr.sort((a,b)=> parseInt(a[0]-b[0]))
-return newarr.join("\n").replace(/,/g," ")
+let arr = input.slice(1) // 
+let newArr = arr.map((x)=>x.split(" "))
+newArr.sort((a,b)=> parseInt(a[1]-b[1]))
+newArr.sort((a,b)=> parseInt(a[0]-b[0]))
+return newArr.join("\n").replace(/,/g," ")
 }
 console.log(solve());
 

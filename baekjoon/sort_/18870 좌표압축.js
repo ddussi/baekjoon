@@ -20,8 +20,8 @@ function solve() {
         }
         start = x;
     }
-    newarr = list.map((x)=>obj[x]);
-return newarr.join(" ");
+    newArr = list.map((x)=>obj[x]);
+return newArr.join(" ");
 }
 console.log(solve());
 
