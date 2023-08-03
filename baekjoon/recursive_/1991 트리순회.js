@@ -19,15 +19,6 @@ function solve() {
       preorder(left);
       preorder(right);
    }
-   function preorder(node) {
-      if(node==='.'){
-         return;
-      }
-      const [left, right] = tree[node];
-      answer += node;
-      preorder(left);
-      preorder(right);
-   }
    function inorder(node) {
       if(node==='.'){
          return;
