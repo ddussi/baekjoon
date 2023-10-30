@@ -1,6 +1,7 @@
 const fs = require('fs');
 const filePath = process.platform === 'linux' ? '/dev/stdin' : './example.txt';
-const input = fs.readFileSync(filePath).toString().trim().split(/\s/);function solve() {
+const input = fs.readFileSync(filePath).toString().trim().split(/\s/);
+function solve() {
     const list = input.slice(1).map(x => x.split(""));
     const obj = {};
     // 생성된 그래프를 표현하는 인접 리스트를 작성
